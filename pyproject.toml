@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grohe"
+description = "Library for accessing Grohe devices through Grohe cloud API"
+readme = "README.rst"
+keywords = [""]
+authors = [
+  {name = "Micke Prag", email = "micke.prag@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[project.urls]
+"Changelog" = "https://github.com/mickeprag/grohe/blob/main/HISTORY.rst"
+"Documentation" = "https://github.com/mickeprag/grohe"
+"Code" = "https://github.com/mickeprag/grohe"
+"Issue tracker" = "https://github.com/mickeprag/grohe/issues"
+
+[tool.hatch.version]
+path = "src/grohe/_version.py"
